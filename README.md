@@ -76,7 +76,7 @@ data_dict_logs = model.summary_logs(save_dict=False)
 plot_trajectory(data_dict_logs, folder=simu_dir, name="s1_traj_plot", log_scale=True, save_png=True)
 plot_regularization(data_dict_logs, folder=simu_dir, name="s1_regu_plot", log_scale=True, save_png=True)
 ```
-![traj_visu_demo](https://github.com/gyf9712/GAMMLI/blob/main/examples/result/simulation/reg_tra.png)
+![traj_visu_demo](https://github.com/SelfExplainML/GAMMLI/blob/main/examples/result/simulation/reg_tra.png)
 
 
 Global Visualization
@@ -84,5 +84,5 @@ Global Visualization
 importance = model.get_all_rank(tr_Xi)
 model.dash_board(data_dict, importance,simu_dir,True)
 ```
-![global_visu_demo](https://github.com/gyf9712/GAMMLI/blob/main/examples/result/simulation/reg_glo.png)
-![global latent_visu_demo](https://github.com/gyf9712/GAMMLI/blob/main/examples/result/simulation/reg_latent.png)
+![global_visu_demo](https://github.com/SelfExplainML/GAMMLI/blob/main/examples/result/simulation/reg_glo.png)
+![global latent_visu_demo](https://github.com/SelfExplainML/GAMMLI/blob/main/examples/result/simulation/reg_latent.png)
