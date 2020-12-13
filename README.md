@@ -1,5 +1,5 @@
 # GAMMLI
-Explainable Recommendation Systems by Generalized Additive Models with Manifest and Latent Interactions
+A Python package for Explainable Recommendation Systems by Generalized Additive Modeling with Manifest and Latent Interactions
 
 The following environments are required:
 
