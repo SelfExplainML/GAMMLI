@@ -3,7 +3,7 @@ from setuptools import setup
 setup(name='gammli',
       version='1.0',
       description='Explainable Recommendation Systems by Generalized Additive Models with Manifest and Latent Interactions',
-      url='https://github.com/gyf9712/GAMMLI',
+      url='https://github.com/SelfExplainML/GAMMLI',
       author='Yifeng Guo',
       author_email='gyf9712@hku.hk',
       license='MIT',
