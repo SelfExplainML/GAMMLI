@@ -21,10 +21,9 @@ from sklearn.model_selection import train_test_split
 from collections import OrderedDict
 import time
 from sklearn.metrics import mean_squared_error,roc_auc_score,mean_absolute_error,log_loss
-import sys
-sys.path.append('../')
-from gammli.GAMMLI import GAMMLI
-from gammli.DataReader import data_initialize
+
+from gammli.gammli import GAMMLI
+from gammli.dataReader import data_initialize
 from gammli.utils import local_visualize
 from gammli.utils import global_visualize_density
 from gammli.utils import feature_importance_visualize
@@ -42,16 +41,16 @@ task_type = "Regression"
 
 meta_info = OrderedDict()
 
-meta_info['user_x_1']={'type': 'continues','source':'user'}
-meta_info['user_x_2']={'type': 'continues','source':'user'}
-meta_info['user_x_3']={'type': 'continues','source':'user'}
-meta_info['user_x_4']={'type': 'continues','source':'user'}
-meta_info['user_x_5']={'type': 'continues','source':'user'}
-meta_info['item_x_1']={'type': 'continues','source':'item'}
-meta_info['item_x_2']={'type': 'continues','source':'item'}
-meta_info['item_x_3']={'type': 'continues','source':'item'}
-meta_info['item_x_4']={'type': 'continues','source':'item'}
-meta_info['item_x_5']={'type': 'continues','source':'item'}
+meta_info['x1']={'type': 'continues','source':'user'}
+meta_info['x2']={'type': 'continues','source':'user'}
+meta_info['x3']={'type': 'continues','source':'user'}
+meta_info['x4']={'type': 'continues','source':'user'}
+meta_info['x5']={'type': 'continues','source':'user'}
+meta_info['z1']={'type': 'continues','source':'item'}
+meta_info['z2']={'type': 'continues','source':'item'}
+meta_info['z3']={'type': 'continues','source':'item'}
+meta_info['z4']={'type': 'continues','source':'item'}
+meta_info['z5']={'type': 'continues','source':'item'}
 meta_info['user_id']={"type":"id",'source':'user'}
 meta_info['item_id']={"type":"id",'source':'item'}
 meta_info['target']={"type":"target",'source':''}
