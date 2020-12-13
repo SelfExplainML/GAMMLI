@@ -6,6 +6,11 @@ The following environments are required:
 - Python 3.7 (anaconda is preferable)
 - tensorflow 2.0
 
+Github Installation
+```shell
+pip install git+https://github.com/SelfExplainML/GAMMLI.git
+```
+
 ## Usage
 
 Import library
